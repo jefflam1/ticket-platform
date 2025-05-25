@@ -1,0 +1,182 @@
+[
+    {
+      "name": "Summer Music Festival 2024",
+      "description": "A three-day music festival featuring top artists from around the world",
+      "price": 299.99,
+      "totalTickets": 5000,
+      "location": "Central Park, New York",
+      "eventDate": 1719849600000,
+      "userId": "user_1234567890"
+    },
+    {
+      "name": "Tech Conference 2024",
+      "description": "Annual technology conference showcasing the latest innovations in AI and blockchain",
+      "price": 599.99,
+      "totalTickets": 2000,
+      "location": "Moscone Center, San Francisco",
+      "eventDate": 1720454400000,
+      "userId": "user_2345678901"
+    },
+    {
+      "name": "Food & Wine Expo",
+      "description": "Explore culinary delights from renowned chefs and wine experts",
+      "price": 149.99,
+      "totalTickets": 1500,
+      "location": "Convention Center, Chicago",
+      "eventDate": 1721059200000,
+      "userId": "user_3456789012"
+    },
+    {
+      "name": "Broadway Musical Night",
+      "description": "Special performance of award-winning Broadway shows",
+      "price": 199.99,
+      "totalTickets": 800,
+      "location": "Theater District, New York",
+      "eventDate": 1721664000000,
+      "userId": "user_4567890123"
+    },
+    {
+      "name": "Sports Championship Finals",
+      "description": "Experience the thrill of championship basketball live",
+      "price": 349.99,
+      "totalTickets": 15000,
+      "location": "Madison Square Garden, New York",
+      "eventDate": 1722268800000,
+      "userId": "user_5678901234"
+    },
+    {
+      "name": "Art Gallery Opening",
+      "description": "Exclusive first look at contemporary art exhibitions",
+      "price": 75.99,
+      "totalTickets": 300,
+      "location": "Modern Art Museum, Los Angeles",
+      "eventDate": 1722873600000,
+      "userId": "user_6789012345"
+    },
+    {
+      "name": "Comedy Night Special",
+      "description": "An evening of laughter with top stand-up comedians",
+      "price": 89.99,
+      "totalTickets": 500,
+      "location": "Comedy Club, Boston",
+      "eventDate": 1723478400000,
+      "userId": "user_7890123456"
+    },
+    {
+      "name": "Business Leadership Summit",
+      "description": "Connect with industry leaders and learn successful business strategies",
+      "price": 799.99,
+      "totalTickets": 1000,
+      "location": "Hilton Hotel, Miami",
+      "eventDate": 1724083200000,
+      "userId": "user_8901234567"
+    },
+    {
+      "name": "Electronic Dance Festival",
+      "description": "Non-stop electronic music featuring world-famous DJs",
+      "price": 159.99,
+      "totalTickets": 8000,
+      "location": "Beach Arena, Miami",
+      "eventDate": 1724688000000,
+      "userId": "user_9012345678"
+    },
+    {
+      "name": "Scientific Symposium",
+      "description": "Latest discoveries in science and technology",
+      "price": 249.99,
+      "totalTickets": 600,
+      "location": "University Hall, Boston",
+      "eventDate": 1725292800000,
+      "userId": "user_0123456789"
+    },
+    {
+      "name": "Fashion Week Preview",
+      "description": "Exclusive preview of upcoming fashion collections",
+      "price": 399.99,
+      "totalTickets": 1200,
+      "location": "Fashion Center, Milan",
+      "eventDate": 1725897600000,
+      "userId": "user_1234567891"
+    },
+    {
+      "name": "Gaming Convention",
+      "description": "Experience the latest in gaming technology and competitions",
+      "price": 129.99,
+      "totalTickets": 3000,
+      "location": "Convention Center, Seattle",
+      "eventDate": 1726502400000,
+      "userId": "user_2345678902"
+    },
+    {
+      "name": "Classical Orchestra Night",
+      "description": "A night of classical masterpieces performed by renowned orchestra",
+      "price": 179.99,
+      "totalTickets": 1800,
+      "location": "Symphony Hall, Vienna",
+      "eventDate": 1727107200000,
+      "userId": "user_3456789013"
+    },
+    {
+      "name": "Film Festival Opening",
+      "description": "Premier screenings of international independent films",
+      "price": 89.99,
+      "totalTickets": 2500,
+      "location": "Cinema Complex, Toronto",
+      "eventDate": 1727712000000,
+      "userId": "user_4567890124"
+    },
+    {
+      "name": "Wellness Retreat",
+      "description": "Three-day wellness and meditation retreat",
+      "price": 499.99,
+      "totalTickets": 100,
+      "location": "Mountain Resort, Colorado",
+      "eventDate": 1728316800000,
+      "userId": "user_5678901235"
+    },
+    {
+      "name": "Startup Pitch Competition",
+      "description": "Watch innovative startups compete for investment",
+      "price": 149.99,
+      "totalTickets": 400,
+      "location": "Innovation Hub, Austin",
+      "eventDate": 1728921600000,
+      "userId": "user_6789012346"
+    },
+    {
+      "name": "Cultural Heritage Festival",
+      "description": "Celebration of diverse cultural traditions and performances",
+      "price": 45.99,
+      "totalTickets": 5000,
+      "location": "City Park, San Diego",
+      "eventDate": 1729526400000,
+      "userId": "user_7890123457"
+    },
+    {
+      "name": "Photography Workshop",
+      "description": "Learn from professional photographers and improve your skills",
+      "price": 299.99,
+      "totalTickets": 50,
+      "location": "Photography Studio, Portland",
+      "eventDate": 1730131200000,
+      "userId": "user_8901234568"
+    },
+    {
+      "name": "Wine Tasting Tour",
+      "description": "Exclusive wine tasting experience at premium vineyards",
+      "price": 199.99,
+      "totalTickets": 75,
+      "location": "Napa Valley, California",
+      "eventDate": 1730736000000,
+      "userId": "user_9012345679"
+    },
+    {
+      "name": "Holiday Light Show",
+      "description": "Spectacular holiday light display and entertainment",
+      "price": 29.99,
+      "totalTickets": 10000,
+      "location": "Botanical Gardens, Atlanta",
+      "eventDate": 1731340800000,
+      "userId": "user_0123456780"
+    }
+]
