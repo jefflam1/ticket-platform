@@ -1,6 +1,13 @@
+'use client';
+
+import ThemeButton from './ThemeButton';
+
 function Header() {
   return (
-    <div className='w-full h-16 bg-black text-primary text-2xl'>Header</div>
+    <div className='flex flex-row w-full h-16  '>
+      <h1 className=' text-2xl text-title'>Header</h1>
+      <ThemeButton />
+    </div>
   );
 }
 
