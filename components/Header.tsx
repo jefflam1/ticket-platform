@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-// import ThemeButton from './ThemeButton';
+import ThemeButton from './ThemeButton';
 import Image from 'next/image';
 import logo from '@/public/images/logo.png';
 import { SignedIn, SignInButton, SignedOut, UserButton } from '@clerk/nextjs';
@@ -56,6 +56,7 @@ function Header() {
                   My Tickets
                 </Button>
               </Link>
+              <ThemeButton />
               <UserButton />
             </div>
           </SignedIn>
