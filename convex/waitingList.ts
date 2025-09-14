@@ -39,7 +39,7 @@ export const getQueuePosition = query({
   },
 });
 
-export const processQueue = mutation({
+export const processQueue = internalMutation({
   args: {
     eventId: v.id('events'),
   },
@@ -135,7 +135,7 @@ export const expireOffer = internalMutation({
       status: WAITING_LIST_STATUS.EXPIRED,
     });
 
-    await processQueue(ctx, { eventId });
+    await ctx.runMutation(internal.waitingList.processQueue, { eventId });
   },
 });
 
@@ -157,6 +157,6 @@ export const releaseTicket = mutation({
     });
 
     // TODO: Process queue to offer ticket to next person
-    // await processQueue(ctx, {eventId})
+    await ctx.runMutation(internal.waitingList.processQueue, { eventId });
   },
 });

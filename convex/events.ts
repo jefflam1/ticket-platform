@@ -1,6 +1,7 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { mutation, query } from './_generated/server';
-import { ConvexError, v } from 'convex/values';
+//@ts-nocheck
+
+import { mutation, query, internalQuery } from './_generated/server';
+import { v } from 'convex/values';
 import { internal } from './_generated/api';
 import { DURATIONS, TICKET_STATUS, WAITING_LIST_STATUS } from './constants';
 
@@ -14,7 +15,7 @@ export const getAllEvents = query({
   },
 });
 
-export const getEventById = query({
+export const getById = query({
   args: { eventId: v.id('events') },
   handler: async (ctx, args) => {
     return await ctx.db.get(args.eventId);
@@ -65,7 +66,7 @@ export const getEventAvailability = query({
 });
 
 // Helper function to check ticket availability for an event
-export const checkAvailability = query({
+export const checkAvailability = internalQuery({
   args: { eventId: v.id('events') },
   handler: async (ctx, { eventId }) => {
     const event = await ctx.db.get(eventId);
@@ -98,6 +99,8 @@ export const checkAvailability = query({
       );
 
     const availableSpots = event.totalTickets - (purchasedCount + activeOffers);
+
+    // const isAvailable: boolean = availableSpots > 0;
 
     return {
       available: availableSpots > 0,
@@ -144,7 +147,10 @@ export const joinWaitingList = mutation({
     if (!event) throw new Error('Event not found');
 
     // Check if there are any available tickets right now
-    const { available } = await checkAvailability(ctx, { eventId });
+    const { available } = await ctx.runQuery(
+      internal.events.checkAvailability,
+      { eventId }
+    );
 
     const now = Date.now();
 

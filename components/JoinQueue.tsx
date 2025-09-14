@@ -28,7 +28,7 @@ export default function JoinQueue({
     userId,
   });
   const availability = useQuery(api.events.getEventAvailability, { eventId });
-  const event = useQuery(api.events.getEventById, { eventId });
+  const event = useQuery(api.events.getById, { eventId });
 
   const isEventOwner = userId === event?.userId;
 

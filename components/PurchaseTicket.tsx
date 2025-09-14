@@ -2,13 +2,13 @@ import { api } from '@/convex/_generated/api';
 import { Id } from '@/convex/_generated/dataModel';
 import { useUser } from '@clerk/nextjs';
 import { useQuery } from 'convex/react';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import ReleaseTicket from './ReleaseTicket';
 import { Ticket } from 'lucide-react';
 
 const PurchaseTicket = ({ eventId }: { eventId: Id<'events'> }) => {
-  const router = useRouter();
+  // const router = useRouter();
   const { user } = useUser();
   const queuePosition = useQuery(api.waitingList.getQueuePosition, {
     eventId,
@@ -88,7 +88,7 @@ const PurchaseTicket = ({ eventId }: { eventId: Id<'events'> }) => {
             : 'Purchase Your Ticket Now →'}
         </button>
 
-        <div className='mt-4'>
+        <div className=''>
           <ReleaseTicket eventId={eventId} waitingListId={queuePosition._id} />
         </div>
       </div>
