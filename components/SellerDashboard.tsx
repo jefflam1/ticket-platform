@@ -162,7 +162,7 @@ export const SellerDashboard = () => {
                           : 'bg-yellow-500'
                       }`}
                     />
-                    <span className='text-lg font-semibold'>
+                    <span className='text-lg font-semibold text-gray-500'>
                       {accountStatus.isActive ? 'Active' : 'Pending Setup'}
                     </span>
                   </div>
@@ -190,7 +190,7 @@ export const SellerDashboard = () => {
                           clipRule='evenodd'
                         />
                       </svg>
-                      <span className='ml-2'>
+                      <span className='ml-2 text-gray-500'>
                         {accountStatus.chargesEnabled
                           ? 'Can accept payments'
                           : 'Cannot accept payments yet'}
@@ -212,7 +212,7 @@ export const SellerDashboard = () => {
                           clipRule='evenodd'
                         />
                       </svg>
-                      <span className='ml-2'>
+                      <span className='ml-2 text-gray-500'>
                         {accountStatus.payoutsEnabled
                           ? 'Can receive payouts'
                           : 'Cannot receive payouts yet'}
