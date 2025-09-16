@@ -1,4 +1,4 @@
-import SellereDashboard from '@/components/SellereDashboard';
+import { SellerDashboard } from '@/components/SellerDashboard';
 import { auth } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
 
@@ -8,7 +8,7 @@ const SellerPage = async () => {
   if (!userId) redirect('/');
   return (
     <div className='min-h-screen bg-gray-50'>
-      <SellereDashboard />
+      <SellerDashboard />
     </div>
   );
 };
